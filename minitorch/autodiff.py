@@ -115,7 +115,7 @@ def topological_sort(variable: Variable) -> Iterable[Variable]:
 def backpropagate(variable: Variable, deriv: Any) -> None:
     """
     Runs backpropagation on the computation graph in order to
-    compute derivatives for the leave nodes.
+    compute derivatives for the leaf nodes.
 
     Args:
         variable: The right-most variable
