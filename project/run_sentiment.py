@@ -32,7 +32,7 @@ def binary_cross_entropy_loss(out, y):
     y: true labels [0, 1] (batch_size,)
     """
 
-    # BEGIN ASSIGN2_3
+    # BEGIN HW2_3
     # TODO
     # 1. Create ones tensor with same shape as y
     # 2. Compute log softmax of out and (ones - out)
@@ -41,13 +41,13 @@ def binary_cross_entropy_loss(out, y):
     
     raise NotImplementedError("cross_entropy_loss not implemented")
     
-    # END ASSIGN2_3
+    # END HW2_3
 
 class Linear(minitorch.Module):
     def __init__(self, in_size, out_size):
         super().__init__()
         
-        # BEGIN ASSIGN2_2
+        # BEGIN HW2_2
         # TODO
         # 1. Initialize self.weights to be a random parameter of (in_size, out_size).
         # 2. Initialize self.bias to be a random parameter of (out_size)
@@ -56,13 +56,13 @@ class Linear(minitorch.Module):
     
         raise NotImplementedError("Linear not implemented")
     
-        # END ASSIGN2_2
+        # END HW2_2
 
     def forward(self, x):
         
         batch, in_size = x.shape
         
-        # BEGIN ASSIGN2_2
+        # BEGIN HW2_2
         # TODO
         # 1. Reshape the input x to be of size (batch, in_size)
         # 2. Reshape self.weights to be of size (in_size, self.out_size)
@@ -72,7 +72,7 @@ class Linear(minitorch.Module):
 
         raise NotImplementedError("Linear forward not implemented")
     
-        # END ASSIGN2_2
+        # END HW2_2
         
         
 
@@ -99,14 +99,14 @@ class Network(minitorch.Module):
         self.embedding_dim = embedding_dim
         self.dropout_prob = dropout_prob
                 
-        # BEGIN ASSIGN2_2
+        # BEGIN HW2_2
         # TODO
         # 1. Construct two linear layers: the first one is embedding_dim * hidden_dim
         #       the second one is hidden_dim * 1
 
         raise NotImplementedError("Network not implemented")
         
-        # END ASSIGN2_2
+        # END HW2_2
         
         
 
@@ -115,7 +115,7 @@ class Network(minitorch.Module):
         embeddings tensor: [batch x sentence length x embedding dim]
         """
     
-        # BEGIN ASSIGN2_2
+        # BEGIN HW2_2
         # TODO
         # 1. Average the embeddings on the sentence length dimension to obtain a tensor of (batch, embedding_dim)
         # 2. Apply the first linear layer
@@ -126,7 +126,7 @@ class Network(minitorch.Module):
         
         raise NotImplementedError("Network forward not implemented")
     
-        # END ASSIGN2_2
+        # END HW2_2
 
 
 # Evaluation helper methods
@@ -209,7 +209,7 @@ class SentenceSentimentTrain:
             ):
                 out=None
                 
-                # BEGIN ASSIGN2_3
+                # BEGIN HW2_3
                 # TODO
                 # 1. Create x and y using minitorch.tensor function
                 # 2. Get the model output (as out)
@@ -219,7 +219,7 @@ class SentenceSentimentTrain:
                 
                 raise NotImplementedError("SentenceSentimentTrain train not implemented")
 
-                # END ASSIGN2_3
+                # END HW2_3
                 
                 
                 # Save training results
@@ -233,7 +233,7 @@ class SentenceSentimentTrain:
                 (X_val, y_val) = data_val
                 model.eval()
                 
-                # BEGIN ASSIGN2_3
+                # BEGIN HW2_3
                 # TODO
                 # 1. Create x and y using minitorch.tensor function
                 # 2. Get the output of the model
@@ -242,7 +242,7 @@ class SentenceSentimentTrain:
                 
                 raise NotImplementedError("SentenceSentimentTrain train not implemented")
                 
-                # END ASSIGN2_3
+                # END HW2_3
                 
                 model.train()
 

@@ -105,11 +105,11 @@ def topological_sort(variable: Variable) -> Iterable[Variable]:
         2. When the children nodes of the current node are visited, add the current node 
             at the front of the result order list.
     """
-    # BEGIN ASSIGN2_1
+    # BEGIN HW2_1
     # TODO
     
     raise NotImplementedError("Task Autodiff Not Implemented Yet")
-    # END ASSIGN2_1
+    # END HW2_1
 
 
 def backpropagate(variable: Variable, deriv: Any) -> None:
@@ -128,11 +128,11 @@ def backpropagate(variable: Variable, deriv: Any) -> None:
         2. If the node is a leaf, the derivative should be accumulated
         3. Otherwise, the derivative should be propagated via chain rule
     """
-    # BEGIN ASSIGN2_1
+    # BEGIN HW2_1
     # TODO
    
     raise NotImplementedError("Task Autodiff Not Implemented Yet")
-    # END ASSIGN2_1
+    # END HW2_1
 
 
 @dataclass

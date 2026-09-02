@@ -85,7 +85,7 @@ python migrate_kernel.py --hw1-dir <hw1 path> --hw2-dir <hw2 path>
 
 Implement automatic differentiation. We have provided the derivative operations for internal Python operators in `minitorch.Function.backward` call. Your task is to write the two core functions needed for automatic differentiation: `topological_sort` and `backpropagate`. This will allow us to traverse the computation graph and compute the gradients along the way.
 
-Complete the following functions in `minitorch/autodiff.py`. The places where you need to fill in your code are highlighted with `BEGIN ASSIGN2_1` and `END ASSIGN2_1`
+Complete the following functions in `minitorch/autodiff.py`. The places where you need to fill in your code are highlighted with `BEGIN HW2_1` and `END HW2_1`
 
 **Note**: Be sure to checkout the functions in `class Variable(Protocol)`!
 
@@ -134,7 +134,7 @@ python -m pytest -l -v -k "autodiff"
 
 ## Problem 2: Neural Network Architecture (30 points)
 
-In this section, you will implement the neural network architecture. Complete the following functions in `run_sentiment.py` under the project folder. The places where you need to fill in your code are highlighted with `BEGIN ASSIGN2_2` and `END ASSIGN2_2`.
+In this section, you will implement the neural network architecture. Complete the following functions in `run_sentiment.py` under the project folder. The places where you need to fill in your code are highlighted with `BEGIN HW2_2` and `END HW2_2`.
 
 ### 1. Implement Linear layer
 
@@ -197,7 +197,7 @@ python -m pytest -l -v -k "network"
 
 ## Problem 3: Training and Evaluation (30 points)
 
-In this section, you will implement codes for training and perform training on a simple MLP for the sentence sentiment classification task. The places where you need to fill in your code are highlighted with `BEGIN ASSIGN2_3` and `END ASSIGN2_3`.
+In this section, you will implement codes for training and perform training on a simple MLP for the sentence sentiment classification task. The places where you need to fill in your code are highlighted with `BEGIN HW2_3` and `END HW2_3`.
 
 ### 1. Implement cross entropy loss function
 
